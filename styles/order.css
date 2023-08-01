@@ -1,0 +1,201 @@
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar {
+          overflow: hidden;
+          background-color: #f1f1f1;
+          padding: 40px 10px;
+          transition: 0.4s;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 99;
+        }
+
+        #navbar a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 25px;
+          border-radius: 4px;
+        }
+
+        #navbar #logo {
+          font-size: 35px;
+          font-weight: bold;
+          height: 100px;
+          transition: 0.4s;
+          margin-left: 50px;
+        }
+
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        #navbar a.active {
+          background-color: #5f2261;
+          color: white;
+        }
+
+        #navbar-right {
+          float: right;
+        }
+
+        @media screen and (max-width: 580px) {
+          #navbar {
+            padding: 20px 10px !important;
+          }
+
+          #navbar a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+
+          #navbar-right {
+            float: none;
+          }
+        }
+
+
+
+
+        /* form */
+        body,
+        html {
+          height: 80px;
+          /* font-family: Arial, Helvetica, sans-serif; */
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .bg-img {
+          /* The image used */
+          background-image: url("newborn-concept-with-four-pairs-shoes.jpg");
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+
+        /* Add styles to the form container */
+        .container {
+          position: absolute;
+          right: 0;
+          margin: 20px;
+          max-width: 700px;
+          padding: 16px;
+          background-color: #ddd;
+          margin-right: 28%;
+          font-size: medium;
+          /* font-family: Yaahowu Light; */
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=date] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+          /* font-family: Yaahowu Light; */
+
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+          background-color: lightgray;
+          outline: none;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+          background-color: #5f2261;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+          font-family: Yaahowu Light;
+
+        }
+
+        .btn:hover {
+          opacity: 1;
+        }
+
+        /* The container */
+        .con {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 12px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .con input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 12px;
+          width: 12px;
+          background-color: #eee;
+          border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .con:hover input~.checkmark {
+          background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .con input:checked~.checkmark {
+          background-color: #5f2261;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .con input:checked~.checkmark:after {
+          display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .con .checkmark:after {
+
+          background: white;
+        }

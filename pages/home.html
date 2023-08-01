@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="styleSheet" href="../styles/home.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body id="b">
+
+
+  <div class="content">
+    <img src="../pics/welcome2.png" class="avatar">
+    <br />
+
+    <button id="strtBtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Start
+      Shopping</button>
+
+  </div>
+
+
+  <div id="id01" class="modal">
+    <div class="imgcontainer">
+
+      <div class="container">
+        <br /><br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <input type="text" id="userName" placeholder="input email" class="slide">
+        <br />
+        <input type="password" id="password" placeholder="input password" class="slide">
+        <br />
+        Default style settings <input type="checkbox" id="myCheck" checked="checked" onclick="myFunction()">
+
+        <div id="text" style="display: none; " class="slide">
+          <br />
+          <label>Font:</label>
+          <br />
+          <select id="fontFamily">
+            <option>ZakirahsCasual</option>
+            <option>arial</option>
+            <option>Comix No2 CLM</option>
+            <option>Comic Sans MS</option>
+          </select>
+          <br />
+          <label>Personalize your background color/Text color:</label>
+          <br />
+          <input type="color" id="backgroundColor">
+          <input type="color" id="fontColor">
+        </div>
+      </div>
+      <button type="button" class="cancelbtn" id="submit">Submit </button>
+    </div>
+
+    <script src="../codes/home.js"></script>
+
+</body>
+
+</html>

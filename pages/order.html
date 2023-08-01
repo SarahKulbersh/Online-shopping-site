@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="styleSheet" href="../styles/order.css">
+  <link rel="styleSheet" href="../styles/navigationBar.css">
+
+
+</head>
+
+<body id="b">
+
+
+  <div id="navbar">
+    <img src="../pics/logo.png" id="logo">
+
+    <div id="navbar-right">
+      <a href="../pages/links.html">Home</a>
+      <a href="../pages/chart.html">My Shopping Cart</a>
+      <a href="../pages/balnket.html" id="blankets">Blankets</a>
+      <a href="../pages/hats.html" id="hats">Hats</a>
+      <a href="../pages/pacifier.html" id="pacifier">Pacifier Clips</a>
+
+    </div>
+  </div>
+
+  <!-- form -->
+  <div style="margin-top:170px;padding:15px 15px 1100px;font-size:30px">
+
+
+    <form action="../pages/finish.html" class="container">
+      <h1 style="color: #5f2261">Order Form</h1>
+      <label id="sum1"></label>
+      <br /> <br />
+
+      <script>
+        let sum = sessionStorage.getItem("sum")
+        let sum1 = document.getElementById("sum1")
+        sum1.style.fontSize = "20px"
+        sum1.textContent = "Total sum:" + sum + "$"
+      </script>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="psw"><b>Name</b></label>
+      <input type="text" placeholder="Enter Full Name" id="name" required>
+
+      <label for="psw"><b>Phone Number</b></label>
+      <input type="text" id="phonenum" placeholder="Enter Phone Number" required>
+
+      <label for="psw"><b>Adress</b></label>
+      <input type="text" placeholder="Enter Full Mailing Adress" required>
+
+      <label for="psw"><b>Credit card number</b></label>
+      <input type="text" id="credNum" placeholder="Enter credit card number" maxlength="16" required>
+
+      <label for="psw"><b>Credit card exp. date</b></label>
+      <input type="date" placeholder="Enter exp. date" required>
+
+      <label id="digit"><b>3 digit security code</b></label>
+      <input type="text" id="num3" placeholder="Enter 3 digit security code" maxlength="3" minlength="3" required>
+
+      <label id="digit"><b>How was your shopping experience?</b></label>
+
+
+      <label class="con">😊<input type="radio" checked="checked" name="radio"><span class="checkmark"></span></label>
+      <label class="con">🙁<input type="radio" name="radio"> <span class="checkmark"></span></label>
+      <label class="con">😔<input type="radio" name="radio"><span class="checkmark"></span></label>
+
+      <label for="psw"><b>Any comments?</b></label>
+      <input type="text" placeholder="coments">
+
+      <input type="submit" class="btn" value="submit">
+    </form>
+
+
+  </div>
+
+  <div class="footer">
+    <p id="ww">www.babyAccssories.com</p>
+    <p id="d">web design by SK</p>
+  </div>
+
+  <script src="../codes/order.js"></script>
+  <script src="../codes/pageStyle.js"></script>
+  <script src="../codes/navbarScroll.js"></script>
+
+
+
+</body>
+
+</html>
