@@ -9,7 +9,7 @@ let r = document.getElementById("name")
 r.addEventListener("keypress", f_letters)
 
 function f_keyPressDigit() {
-    if (!(event.keyCode >= 48 && event.keyCode <= 57))//האם זה אותיות
+    if (!(event.keyCode >= 48 && event.keyCode <= 57))
         event.preventDefault()
 
 }
